@@ -47,9 +47,9 @@
 
 1. `过渡：`在两个视觉状态之间突出一个平滑的运动，让用户适应新界面而不是被推进去。像这样的平滑过渡可以减轻对于不熟悉的界面的精神负担。
 
-2.  `焦点：`引导用户关注界面上的一个重要的或者最近更新的特殊部分，尤其是那些需要用户立即操作的元素。
+2. `焦点：`引导用户关注界面上的一个重要的或者最近更新的特殊部分，尤其是那些需要用户立即操作的元素。
 
-3.  `乐趣：`通过使用奇思妙想或意料之外的动作让一个平凡的交互更加吸引人且有趣。
+3. `乐趣：`通过使用奇思妙想或意料之外的动作让一个平凡的交互更加吸引人且有趣。
 
 让我们看一些动画的例子并仔细剖析它们存在的原因以及它们使用这三类动画的目的。
 
@@ -58,16 +58,13 @@
 
 iOS 7日历app的动画
 
-
 ----------
 苹果给iOS的日历app为iOS 7彻底重新构想了一遍。查看一年和单个月份之间的动画是一个很好的过渡的例子，在两个视觉状态直接引导用户。因为过渡不只是一个简单的导航栏控制器push，而是动画地放大一个更深细节的层次，用户能明确地感知到他们正在深入这个数据。
-
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/call.gif)
 
 iOS 7.1 通话界面和关机动画
-
 
 ----------
 从iOS 7.1开始通过界面动画变得彻底精致了，并且现在比以前有了更加一致的设计。当接电话时，绿色的接通按钮会旋转并过渡成红色的，这样就可以变成挂断按钮。一个相似的过渡也发生在你点击绿色的拨通按钮发起一次通话的时候。带锁的关机滑动条现在变得更加易懂，并且整个屏幕（除了你在滑动的关机按钮）都会淡出来暗示如果你继续滑动它的话界面接下来将会进入什么状态——一部关机了的手机。
@@ -81,13 +78,11 @@ iOS 7.1 通话界面和关机动画
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/map.gif)
 
-
 ----------
 这是一个很好的关于动画如何让用户适应并帮助他们理解app背后更大的逻辑模型的例子。当动画渐出主界面以及动画渐入地图时保持图标不动让地图图标看起来像两个面板之间的视觉支点。当用户点击地图图标时，地图会承接上一页，之前的界面收缩到背后但依然可见。用户不会觉得他们在移动时迷失在应用之中并且能够理解主要特性是如何工作的。
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/paper.gif)
-
 
 ----------
 Facebook Paper中所有的过渡和新展现的信息都使用了很多2D和3D动画效果。在第一个面板中，当点击地球图标时，Notifacations表单会从图标下方滑出，给用户一种它总是折起在地球图标下方，等待被显示的印象。还有，通过图标，它加强了一种特定的心理模型给用户，暗示这个额外的界面总是可以通过地球图标获取，无论他们在应用的那个地方。
@@ -99,29 +94,23 @@ Paper使用了非常棒的动画框架Pop，Facebook将其发布为开源工程�
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/iwatch.gif)
 
-
 ----------
 在这个概念下Apple手环的动画，你可以看到每个界面之间的过渡都是流动性的，并且物体在内物体出现在界面上之前移出。每个物体移动得好像被之前运动中的物体拖出了屏幕。因为显示区域太小了，并且在水平方向上，使用动作来建立用户对app的心理模型非常重要。这里你可以看到音乐控件在时钟的左边并且在其下方是更改歌曲的功能区。在时钟的右边是一系列的app。所以即使在屏幕的左边没有任何导航线索（比如返回按钮），过渡动画也给了你关于产品及其界面的整体信息结构的感觉。
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/menu.gif)
 
-
 ----------
 就像之前手环的例子一样，这是另一个在视觉上解释应用数据层级的整体架构的动画。这个动画从一个简单的中心对齐文本菜单开始，当点击My Files的时候，文件夹图标会扩展开来显示那些文件。用户会得到一种菜单就在文件列表背后的感觉，并且觉得他们可以在任何时候点击右下角的菜单按钮回到列表。当点击菜单按钮时，收缩整个文件列表进入之前的文件夹图标然后再次显示菜单。
-
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/music.gif)
 
-
 ----------
 这是另一个Jakub Autalik设计的非常有趣的动画，之前的里程计东湖也是他创建的。每个界面都使用了多种内置的效果来错开每个视觉元素的显示。歌曲列表动画进入的方式比起简单地使用iOS导航栏push的动画进入来说是一种非常好看的方式。这个动画的关键不同点在于屏幕不是一次性移动的，界面上每一个独立的元素都在移动。为了达到这种效果，每个元素的开始时间都需要与之前的元素又一些错开，好像它们都被拖进来一样。这种类型的拖动效果会在之后作为编码示例来展示。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/skull.gif)
-
 
 ----------
 这个下拉刷新的骷髅头动画是一个很好的介绍一些古怪而有趣的，容易被忽视并且构建非常简单（而且廉价！）不需要任何复杂动画的界面元素的例子。在下拉手势中发生了一系列事情，首先，组成骷髅头图片的元素会旋转，让它像是在向下旋转一样。然后，有两个默认状态下界面上不可见的动画人物在下拉的时候出现。最后，这些动画人物不是简单的在用户下拉的时候出现，它们的一部分也会在手势过程中旋转和移动。这是一个包含多个不同元素的非常复杂的动画，但是你可以想象用户可能会一次次地下拉界面，因为它实在是太有趣了。这是让他们记住这个app的地方，而在用户的主屏幕上凸现出来是非常重要的。
@@ -137,8 +126,8 @@ Paper使用了非常棒的动画框架Pop，Facebook将其发布为开源工程�
 如果你看一下上一节展示的动画GIF图，以及像[CAPPTIVATE.co](http://capptivate.co)和其他网站展示的多种动画，并且你对发生了什么观察得非常仔细，你就会开始在视觉效果中看出一些模式来。这些模式是设计师和开发者在他们的动画中一次又一次改变的特定属性，而且这还不是全部。事实上我认为如果你简单地操作下面三个属性就可以创建一个充满了世界级动画的完整app：
 
 1. `位置：`界面上一个物体的精确的X和Y坐标。
-2.  `透明度：`一个物体的透明度，从0.0（不可见）到1.0。
-3.  `比例：`一个物体对比于其原始尺寸的尺寸。1.0的比例意味着物体被设置为其原始大小的高和宽。0.5的比例意味着物体是一半的宽度和高度。0.0的尺寸意味着物体的宽度和高度都是0，但依然存在于界面上一个特定的坐标。2.0的比例意味着物体的高度和宽度是原始的两倍。
+2. `透明度：`一个物体的透明度，从0.0（不可见）到1.0。
+3. `比例：`一个物体对比于其原始尺寸的尺寸。1.0的比例意味着物体被设置为其原始大小的高和宽。0.5的比例意味着物体是一半的宽度和高度。0.0的尺寸意味着物体的宽度和高度都是0，但依然存在于界面上一个特定的坐标。2.0的比例意味着物体的高度和宽度是原始的两倍。
 
 这三个属性是人们设计iOS app的动画时三个可动画化的值。你可以通过简单地单独或结合使用这些属性实现惊人数量的好动画。
 
@@ -146,34 +135,28 @@ Paper使用了非常棒的动画框架Pop，Facebook将其发布为开源工程�
 
 `位置。`如果你想要让一个物体在屏幕上移动，你只需要操纵它的位置。将一个向屏幕的下方移动意味着你在增加其Y坐标，因为（X:0, Y:0）在iOS app中表示屏幕的左上角。如果你想要将一个物体从屏幕的底部移动到中央，你首先需要将Y坐标设为比屏幕的垂直分辨率大（道屏幕底部），然后将Y坐标动画移动到一个较小的数值来放置在屏幕的中央。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/xy.gif)
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/xy.gif)
 
 `320*568是iPhone 5屏幕的一倍分辨率。iPhone 6的屏幕是375*667。然而全部真实的像素总数是这个的两倍，但你放置UI对象到屏幕上时不需要考虑这个。`
 
 ----------
 `透明度。`将一个界面元素从100%不透明改成透明一些意味着你在调整它的透明度，或者alpha值。动画改编一个物体的透明度可能是最常见的属性，这可以在与背景混合到100%不透明地显露在前端之间做一个很好的过渡。而且如果你在缓慢地从屏幕上移除一些东西，动画淡出将其alpha设为0通常不会有错。一般你会看到透明度动画和其他属性的动画同时出现，比如说，将一些东西从屏幕底部移动到屏幕上（位置），同时将其透明度从0.0（透明）动画变成1.0（不透明）。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/alpha.gif)
-
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/alpha.gif)
 
 ----------
 `比例。`如果你想要让一个物体变大或变小（一次变化两个方向来保持其比例，或一次只变化一个方向），有一个简单的属性可以调整，那就是物体的比例。想要创建一个看起来和iOS 7的警告框视图一样的模态警告框么？那是一个依托于改变比例的视觉效果的很简单的动画。将比例初始设为大概1.3倍（比原始尺寸要大），然后将其动画变为1.0倍（原始尺寸），同时改变透明度（从0开始变成1.0），这就是它的全部。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/scale.gif)
-
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/scale.gif)
 
 ----------
 现在我们已经描述了在设计动画是经常用到的三个属性，让我们回到之前我展示的动画例子并精确地拆分它们哪里用了位置、透明度和比例动画来创建它们的视觉效果。
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/map.gif)
-
 
 ----------
 在Jeff的地图动画中，他同时使用了所有位置、透明度和比例动画的组合。
@@ -185,7 +168,6 @@ Paper使用了非常棒的动画框架Pop，Facebook将其发布为开源工程�
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/iwatch.gif)
 
-
 ----------
 记得这个手表的界面和它光滑的动作么？真的没有什么秘诀，这个动画设计唯一的属性就是元素的位置。没有比例或者透明度的调节，元素仅仅是在屏幕上通过改变他们的位置来移入移出。每个动画的开始时间会比前一个元素稍微错开一点来给出一种“拖拽”的感觉，但是唯一用到动画里的就只有位置。
 
@@ -193,36 +175,28 @@ Paper使用了非常棒的动画框架Pop，Facebook将其发布为开源工程�
 
 `颜色。`就如CSS动画中一样，你可以在两个值之间过渡颜色。这可以是你界面中一些文本的颜色或形状和面板的背景色。你可以在一次点击或者介绍一个新界面给用户的时候过渡颜色。或者可以在用户首次体验一个滑动的时候在颜色之间缓慢地切换。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/color.gif)
-
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/color.gif)
 
 ----------
 `旋转。`你界面中的物体可以旋转，从初始的0度到360度的旋转状态到360度的整体旋转并回到0度。当你在代码中创建动画的时候旋转通常使用弧度来表示（0到2π）。轻微的旋转动画可以增加非常灵巧有趣的元素到原本平凡的动作中去，尤其是和之后会讨论的跳跃动画曲线组合的时候。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/rotate.gif)
-
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/rotate.gif)
 
 ----------
 `3D。`在你的界面中以3D的方式变化一个物体意味着在第三个方向上操作它，并且当你在动画中使用3D的时候，通常要么是3D旋转回屏幕，要么是旋转向用户。这个旋转的数量也是像2D平面旋转一样用弧度来表示的，但3D动画的另一个关键因素是你想使用多少透视程度。通过改变透视值，你可以有限地描述元素会被放置在视觉上离屏幕前端多远的地方。这取决于3D变化过程中变形的数值。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/3D.gif)
-
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/3D.gif)
 
 ----------
 一个精细的3D效果的例子是Clear中捏的动画。这个视觉效果是任务条目行视觉上折了一半，其中每一半都向屏幕里面旋转（在3D空间上）。旋转的数值和行的上下两半的位置都被仔细的控制，所以在中间没有缝隙去影响效果。还有，为了让它看上去确实像一个三维物体，要让行的上半部分比下半部分暗来显示一个阴影。这类似于Paper中的弹起动画：新闻在打开的时候使用了一个3D变化来旋转向用户。
 
-
 ----------
-![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%201/clear.png)
+![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/clear.png)
 
 Clear中的捏交互
-
 
 ----------
 
@@ -248,12 +222,10 @@ Clear中的捏交互
 
 最简单的可视化说明时间以及属性随着时间改变的效果的方式如下所示。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/linear.gif)
 
 一个线性动画的时间曲线
-
 
 ----------
 图像代表了一个动画。垂直坐标轴表示你在动画的属性值，在这个例子中是元素的比例。对于这个动画，我们会从比例值为0.0开始（对用户不可见）并以1.0的比例值结束（元素的初始尺寸）。
@@ -264,10 +236,8 @@ Clear中的捏交互
 
 这个球的比例随着时间以固定的速度持续增长，因为这个动画有一个线性的时间曲线。为什么要称一个直线为曲线呢？因为你很少让动画处于线性的时间下，大多数的动画时间图看起来都是曲线。下面的四个图形表示了一些典型的动画时间。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/easing.png)
-
 
 ----------
 垂直轴表示你动画的属性值，例如元素的比例或位置（如上面的图形所讨论的）。垂直轴的底部表示属性的开始值，也就是为0的Y坐标，垂直轴的顶部是属性的结束值，也就是为100的Y坐标。水平轴表示你的动画从开始到结束的时间，整个轴长表示动画的周期。线准确地指示了在特定的时间点属性值会变成什么样。
@@ -276,10 +246,8 @@ Clear中的捏交互
 
 缓入缓出动画的小球的时间曲线大致如下。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/easeinout.gif)
-
 
 ----------
 一个缓入缓出的曲线在很多地方都和线性时间曲线不同。首先，它确实是一个曲线，所以在0.25秒的时候比例不是0.25，值改变的速率不是恒定的。然后，最容易注意到的，它产生了一种不同的动画动作，即慢慢地开始动作（好像落后了一点）并且慢慢地结束（就好像接近最终比例的时候缓慢地变成最终值）。
@@ -290,10 +258,8 @@ Clear中的捏交互
 
 下面是淡出动作的时间曲线。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/easeout.gif)
-
 
 ----------
 一个视觉化这种曲线的方式是想象餐厅里的服务员给你拿来了你的食物。他们不会快速地突然将盘子放在你的面前，他们会慢慢地最终把盘子停放在桌子上。
@@ -302,10 +268,8 @@ Clear中的捏交互
 
 下面大致就是这种动画曲线的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/easein.gif)
-
 
 ----------
 观察淡入动画曲线，你可以看到在0.5秒的时候（动画时间的一半）比例值仅仅才到最终值的1/4。这创建了一种动画开始得非常缓慢迟钝，然后在最后的时间里迅速地跑到最终值的感觉。
@@ -314,12 +278,10 @@ Clear中的捏交互
 
 类似Core Animation和CSS3中提供的缓慢曲线在数学上由Bezier曲线定义，就如你在Sketch、Illustrator或者其他矢量绘图工具中绘制的一样。要定义在缓慢动画中使用的Bezier曲线类型，你需要选择曲线端点的位置。Core Animation和CSS3执行缓慢动画使用的特定曲线类型是一种三维的Bezier曲线，意味着有四个控制点来定义。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%202/cubic.gif)
 
 移动控制点是如何影响曲线形状的。
-
 
 ----------
 下一节我们会开始学习漂亮动画背后的真实魔法，它创建了自然感觉的动作。
@@ -330,22 +292,18 @@ Clear中的捏交互
 
 所以自然的动作时怎样的呢？符合物理法则的移动例子是什么？好吧，就如下面这个一般。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/spring.gif)
 
 弹簧的阻尼
 
-
 ----------
 一个挂着方块的弹簧。它就如你所期望弹簧上的方块一样移动，因为你之前已经看过或体验过类似的弹簧运动很多次了。它的运动和之前说的简单动画时间曲线有很大的不同。让我们看一下弹簧上物体的动画曲线。
-
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/damped.png)
 
 阻尼的震荡运动
-
 
 ----------
 这个曲线表示了挂在弹簧上的物体的运动，有很多的属性（例如拉力、摩擦力和阻力）都影响了其动作。如果你观察上图中的深蓝色曲线，它表示欠阻尼的系统，意味着物体在到达最终稳定位置前会来回震荡（反弹）。这就是让动画如上面的例子一般感觉像弹簧上挂着的方块一样需要的动画曲线类型。这种欠阻尼的弹簧动作可以让动画变得有弹性，很多app都在界面动画中采用了这种类型的动作。比如说，Facebook Paper几乎对所有界面动作使用了这种弹簧动作。
@@ -356,28 +314,22 @@ Clear中的捏交互
 
 让我们看看类似弹簧动作的物体。红色的圆仿佛附有非常有弹性的弹簧一般在移动。绿色的圆带着稍微平滑一些的弹性移动。蓝色的不带有弹性，但会在接近终点值时以指数级衰退速度的动画变得非常的缓慢。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/threeballs.gif)
-
 
 ----------
 第三个球实际上并没有弹性，但它的动画依然被现实世界的弹簧物理法则所管理，是怎么回事呢？弹簧不是应该有弹性么？如我之前所说，附有弹簧的物体的动作实际上由弹簧的特性决定。想象一个弹簧，组成弹簧的线非常的细。这个弹簧的拉力是非常的松额，如果你在其底部挂上一个小物体，并松开它，你就会看到如红球演示的弹性动作。比较一个拥有更多线圈和更大拉力的更加高强度类型的弹簧。挂在这种类型弹簧上的物体动作会很没有弹性，因为弹簧的属性非常不同。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/springs.jpg)
-
 
 ----------
 类似弹簧动作的动画曲线和简单类型动作的动画曲线可能看起来相似（至少他们都是曲线！），但是它们背后的数学运算是非常不同的。如前所说，简单曲线通过三维贝塞尔函数来定义绘制曲线控制点的位置。不幸的是，很多高级类型的曲线不能用贝塞曲线来描述。其中一种曲线就是阻尼弹簧系统。
 
 使用好的拥有弹簧感觉动画的动作类型一般模仿阻尼谐振，其可以调整弹簧末端方块质量、弹簧的刚度、阻尼强度等不同值。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/damped.gif)
-
 
 ----------
 `质量`是指挂在弹簧末端物体的质量。`刚度`是指拉伸弹簧的难度，一般由弹簧的厚度和盘绕的密度决定。`阻尼强度`是指抵抗力度或者摩擦力，就如你尝试在水中快速拖动你的手时受到的阻力。这些是定义一个弹簧动作的关键属性。
@@ -414,10 +366,8 @@ Objective-C是一种编程语言，于1980年代首次出现，并作为编写Ne
 
 这是我的app Interesting for iPhone的截屏和界面中一些视图的分解。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/header.png)
-
 
 ----------
 1. 运营商图像视图（苹果控制）
@@ -443,18 +393,14 @@ Objective-C是一种编程语言，于1980年代首次出现，并作为编写Ne
 
 Core Animation是一个动画和图形合成框架，用于提高速度和效率。虽然在名字中有动画的单词，不要让它误导你以为它只能做这个；它实际上负责屏幕上显示的所有视图的整体渲染体系结构，可以非常快速地进行透明度计算、图像过滤和视觉效果。它是为iOS创造的，但从OS X10.5开始，也可以在Mac上应用。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/calogo.png)
-
 
 ----------
 要通过GPU管理渲染在屏幕上的图像内容，Core Animation使用`CALayer`对象作为主力。`CALayer`负责界面渲染，实际上，`UIView`对象只是`CALayer`的简单封装，而Core Animation在苹果公司内部最初名为Layer Kit！当你在屏幕上操作一个`UIView`的布局或方向的时候，你实际上在移动它的`CALayer`。Core Animation在硬件层面管理合成并操作你app的界面内容，与显卡对话并精简你界面的渲染，让它变得快速而不迟缓。iOS中所有的动画性能都是由Core Animation框架实现的。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/ca.png)
-
 
 ----------
 图层可以像视图一样被层级安排来在屏幕上创建一个完整的用户界面。你不是非得要用`UIView`对象来构建你的界面，也可以使用`CALayer`对象来代替，像视图一样将它们按照父视图-子视图的类型放置，只不过替换成父图层-子图层。
@@ -473,10 +419,8 @@ redBall.layer.cornerRadius = 50;
 
 我们创建了一个新的`UIView`对象并设置了它的框架来定义它在屏幕上的的X和Y坐标，以及它的宽和高，然后将其添加到屏幕中。我们还将它的背景颜色属性设为了红色。如我前面所说，要让一个视图的角变为圆角，你需要获取它的layer，所以我们设置它的layer.cornerRadius值为50，这是宽度的一半。如果你在你的app的delegate类的-application:didFinishLaunchingWithOptions方法中添加这个代码，就可以在运行后的屏幕上看到它。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/ball.png)
-
 
 ----------
 这里是和上面一样的功能，但是是Swift而不是Objective-C写的。你可以打开Balls In Swift Xcode工程导出这个例子的Swift版本。
@@ -512,10 +456,8 @@ redBall.layer.cornerRadius = 50;
 
 最后，我们不需要在动画完成后运行任何代码，所以我么你设置完成（completion）的安排为NULL。这里是你再次运行代码后会看到的样子。GIF会回到原始的样子但实际上球并不会。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/ballanim1.gif)
-
 
 ----------
 这里是Swift下同样的代码：
@@ -546,10 +488,8 @@ redBall.layer.cornerRadius = 50;
 
 在我们现在的动画block中，我们做了很多事情。首先，我们将视图的背景色从原始的红色改成了绿色。Core Animation会帮我们修改它并处理中间的颜色。接下来，我们改变了两个关于视图的transform的内容：它的尺寸和平移。平移的更改会将视图上、下、左、右移动。在我们的例子中，我们会将它右移75个像素。我们使用了`CGAffineTransformConcat()`函数来将两个更改操作合成了一个，这样就可以分配一个简单矩阵转化给视图。你可以手动构建转变矩阵来包含尺寸和平移更改到一个数据结构中，但我发现让iOS来帮我们结合多个单独的转变到一个最终转变会容易一些。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/ballanim2.gif)
-
 
 ----------
 到目前为止有意义吗？围绕转变矩阵的数学有一点复杂和困难，但是苹果让它变得亲近，即使你没有线性代数的背景。动画一个视图的转变矩阵是发动动画最有效的方式之一。
@@ -575,10 +515,8 @@ redBall.layer.cornerRadius = 50;
 
 在我们的例子中我们设置阻尼为0.3（有点弹性），因为我们是用物体静止开始的所以速度为0。因为弹动会使时间变长所以我们也增加了持续时间。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/redspringy.gif)
-
 
 ----------
 就我个人来说，我不认为iOS 7中使用了新block方法的弹簧动画如我所愿地平滑移动，当你想要完善动作时他们也没有提供足够的弹簧属性来操作。还有，如果你在创建一个地图app并想要使用这些UIKit Dynamics中的弹簧动作将是不幸的。如果你的app还需要支持iOS 7之前的版本怎么办？你也是不幸的，因为UIKit Dynamics直到iOS 7才出现并且不能用于之前的版本中。
@@ -593,7 +531,6 @@ JNWSpringAnimation是Jonathan Willing，一个Mac和iOS开发者，写的一个�
 如我之前所说，Core Animation的时间曲线是由三维贝塞尔曲线定义的。你可以告诉一个动画去使用线性、淡入、淡入淡出或者淡出时间曲线，或者你可以手动设置曲线的控制点，就如你可以在CSS动画中使用三维贝塞尔动画时间函数。
 
 然而，你不能用这种方式定义弹簧动作动画曲线，因为他们的形状太高级了。所以你可以怎么做呢？我们可以创建类似这个的其他什么动作吗？
-
 
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/linespring.png)
@@ -634,7 +571,6 @@ scale.mass = 2;
 
 我们刚才将一个红色的球作为动画示例，弹簧的动作并不是关键的，我们何时开始用下一节中定义的动作动画实际的界面元素，以及我们想要实现什么才是关键。这就是为什么一个类似JNWSpringAnimation提供的交互式的弹簧定义的app很重要，当你创建你的动画时它节省了大量的时间。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo.gif)
 
@@ -671,10 +607,8 @@ scale.toValue = @(2.0);
 
 如果我们创建并运行我们的代码，这就是产生的动画。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo2.gif)
-
 
 ----------
 现在如果你想要在Swift工程中使用`JNWSpringAnimation`，由于你是使用一个Objective-C框架，你需要使用一些称为“桥街头”的东西让Xcode知道你想要在你的Swift代码中使用非Swift的框架。所以首先，我拖动称为JNWSwift的我需要使用`JNWSpringAnimation`的.h和.m文件到Xcode中的我的Swift工程中（包含到Xcode工程文件中）。Xcode就会询问是否要创建一个桥街头，我选择要，这就是哪个特殊文件的内容。
@@ -706,7 +640,6 @@ redBall.layer.addAnimation(scale, forKey: scale.keyPath)
 
 这就是Swift代码和Objective-C代码会创建的一样的动画。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo2.gif)
 
@@ -717,8 +650,8 @@ redBall.layer.addAnimation(scale, forKey: scale.keyPath)
 Core Animation在任何给出的时间内会维持三个你的层的集合或者树。每个层树都会在你的界面显示过程中扮演一个重要的角色。
 
 1. `模型层树。`模型层树反映了一个layer静止不动画时的所有属性。比如说，当我们设置redBall.layer.cornerRadius到50来让它变成球时，我们就是在模型层上设置属性。模型层上的值是你的app交互的最多的。任何时候你改变一个layer的值时，都在更新它的模型层。模型层上的值不会在动画过程中改变，并会持续反应你添加动画前的值。
-2.  `表现层树。`表现层树反映了动画时layer上的属性，并包含了运行动画时的变化值。你不应该在这个层树上设置任何值，通常都是在想要准确了解一个layer在哪或是其在动画过程中的行为时通过查看当前的动画值来与表现层树交互。
-3.  `渲染树。`渲染树时苹果的私有值集合，用来执行渲染到屏幕上的实际绘制。你不需要与其交互或知道这些值。
+2. `表现层树。`表现层树反映了动画时layer上的属性，并包含了运行动画时的变化值。你不应该在这个层树上设置任何值，通常都是在想要准确了解一个layer在哪或是其在动画过程中的行为时通过查看当前的动画值来与表现层树交互。
+3. `渲染树。`渲染树时苹果的私有值集合，用来执行渲染到屏幕上的实际绘制。你不需要与其交互或知道这些值。
 
 当我们添加一个动画到layer的时候，动画会在layer 的表现树上操作这些值，当动画完成的时候，动画会自动从layer移除，并且表现树的值会变回模型树的值，因为这些值反映了真实、静止的layer属性。
 
@@ -741,10 +674,8 @@ redBall.transform = CGAffineTransformMakeScale(2.0, 2.0);
 
 通过手动地设置redBall的transform属性为两倍比例，并匹配动画的最终值，动画会在移除的时候将实际的layer上的transform值无缝更新为匹配动画的最终值。现在球就会维持在2倍大小了。GIF依然会回到起始位置，不过在代码中球不会。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo3.gif)
-
 
 ----------
 
@@ -768,10 +699,8 @@ redBall.transform = CGAffineTransformMakeScale(2.0, 2.0);
 
 这些弹簧属性产生了一个更慢、更深的移动。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo4.gif)
-
 
 ----------
 下一个例子没有任何弹性，但有一个指数衰减动作来慢慢地到达最终值。这是模仿过阻尼的弹簧系统。这个动作类似于简单的淡出动作，但到达最终值时会更加的轻缓。我们也可以通过操作阻尼和刚度属性来调整其到达最终值的速度。
@@ -783,18 +712,14 @@ scale.stiffness = 6;
 scale.mass = 1;
 ```
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemoexpo.gif)
-
 
 ----------
 这里是三个并排的球，第一个的阻尼为6、刚度为6、质量为1。第二个阻尼为15、刚度为15、质量为1。第三个阻尼为30、刚度为30、质量为1。他们都是指数衰减型的动作，但他们到达最终值的速度不同。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo3balls.gif)
-
 
 ----------
 
@@ -816,10 +741,8 @@ redBall.transform = CGAffineTransformMakeRotation(M_PI_2);
 
 由于这是一个旋转动画，开始和结束值是由弧度定义的角度。我们使用便利的函数`CGAffineTransformMakeRotation()`来设置模型层的最终值为2π。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemorotate.gif)
-
 
 ----------
 接下来我们要设置弹簧的阻尼和刚度为如之前展示的3个层示例一般会导致指数衰减类型动作的类似值。我们会动画其位置，而不是layer的比例。
@@ -840,10 +763,8 @@ redBall.transform = CGAffineTransformMakeTranslation(400, 0);
 
 我们要动画的位置关键路径为“transform.translation.x”，是从左到右的位置——x坐标。我们会将其向右移动400个像素，所以toValue是400，要设置最终值并保持球在我们动画的地方，我们需要设置球的transform到`CGAffineTransformMakeTranslation(400, 0)`。这个函数是一个改变视图的变化矩阵的平移组件的简单方式，它接收两个参数，x和y的变化。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemobrown.gif)
-
 
 ----------
 当然，我们可以一次性动画很多属性。这里是一个同时动画比例和旋转的代码。看你能不能发现与单个属性动画的区别。
@@ -878,30 +799,23 @@ redBall.transform = CGAffineTransformRotate(redBall.transform, M_PI);
 
 第二个动画会旋转我们的对象π的角度。让我们看看包含比例和旋转变形的动画看起来什么样。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo5.gif)
-
 
 ----------
 很酷对吧，我们不需要对每个动画设置同样的时间曲线；因为这是两个单独的动画对象，我们可以单独地控制每个弹簧的属性。这里是一个比例和旋转动画的例子，其比例弹簧使用了一个指数衰减类型的弹簧动作（没有弹性），而旋转动画动作非常有弹性。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo6.gif)
-
 
 ----------
 这里是另一个同时添加两个动画的例子。这次它组合了一个位置（平移）动画和一个比例变形。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%203/jnwdemo7.gif)
 
-
 ----------
 我不知道你如何，但我对于仅仅动画这些色块已经有点无聊了。我认为是时候进入一些使用JNWSpringAnimation来实现弹簧动作动画的真实世界、真实app的例子了。
-
 
 ----------
 
@@ -911,10 +825,8 @@ redBall.transform = CGAffineTransformRotate(redBall.transform, M_PI);
 ###仿制一个iOS AlertView
 重现一个熟悉的界面元素是一个很好的熟悉动画开发的方式。首先，让我们创建我们自己的标准iOS警告视图。这是内置的警告视图的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/ios7alert.gif)
-
 
 ----------
 在本指南之前的章节中，我解释了分解一个动画的各个组成部分有多么重要，这样你就可以准确地构建它。仅仅说“警告框动画进入屏幕”是不够的，你需要准确地知道发生了什么。让我们来分解这个动画。
@@ -926,10 +838,8 @@ redBall.transform = CGAffineTransformRotate(redBall.transform, M_PI);
 
 在我们进入详细的代码之前，让我们看看我们要完成的警告框是什么样子的。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alertfinal.gif)
-
 
 ----------
 首先让我们创建一个简单的有白色背景的应用窗口。这是在应用的delegate类中，并且代码会在app完成启动的时候就立即运行。你可以在Alert View 1 Xcode工程中参考代码。
@@ -960,10 +870,8 @@ overlayView.alpha = 0.0f;
 
 这个覆盖层是一个简单的`UIView`，填充了整个主窗口对象。这意味着它会被放置在窗口的左上角，并且其宽和高会匹配窗口，从而覆盖所有的内容。为了显示我现在有的内容，如果我提高覆盖层的不透明度，这就是看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alert1.png)
-
 
 ----------
 
@@ -1009,10 +917,8 @@ alertView.layer.shadowRadius = 10.0f;
 
 如果我将alpha值调回1.0并移除比例增加的变换然后截屏，这就是它看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alert2.gif)
-
 
 ----------
 
@@ -1050,10 +956,8 @@ alertView.transform = CGAffineTransformMakeScale(1.0, 1.0);
 
 这就是现在动画看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alert4.gif)
-
 
 ----------
 
@@ -1092,10 +996,8 @@ alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
 
 这里是完整的动画：
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alertfinal.gif)
-
 
 ----------
 
@@ -1103,10 +1005,8 @@ alertView.transform = CGAffineTransformMakeScale(0.7, 0.7);
 
 现在我们基本重现了标准的iOS 7警告框视图，让我们娱乐一下，构建一些有不同类型动作的自定义的警告框视图。这里是一个警告框的例子，有着位置和比例的动画，并且其出现和消失的动画都是在屏幕的底部。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alertfrombottom.gif)
-
 
 ----------
 为了完成这个动画，支撑警告框的`UIView`和我们之前的例子的设置基本一致，但这一次我们需要更新它的transform属性来进行translation和scale的更改。
@@ -1201,27 +1101,21 @@ alertView.transform = CGAffineTransformTranslate(alertView.transform, 0, 600);
 
 如果我们加快translation动画，使其damping和stiffness值和scale动画一样，这就是它看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alert2fast.gif)
-
 
 ----------
 与慢一点的过渡相比较...
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alertfrombottom.gif)
-
 
 ----------
 
 现在让我们为我们的警告框视图创建一个不同类型的动作，从屏幕的中央出来并带有一些弹性动画来获取用户的注意。这就是它看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%204/alert3center.gif)
-
 
 ----------
 这是一个更简单的动画，因为我们只动画了警告框transform的一个属性，即scale。我们设置它的初始scale为0来建立我们的警告框视图。
@@ -1255,20 +1149,16 @@ alertView.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0
 ### 创建Jeff Broderick的地图动画
 在本指南的前面，我提到了一些Jeff Broderick设计并发布到Dribbble的很棒的动画。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map.gif)
-
 
 ----------
 如我所说，这里有一些不懂得动画。首先，当地图的图标被点击时，应用的主界面（包括导航栏）同时有不透明度和比例的动画来让其淡出到黑色的背景中并且有一点点缩小。同时，地图伴随着不透明度和比例的动画显著地显现到界面的前面来。地图还会向屏幕上方移动一点，就像过度动画一样。地图图标会保持在原位。
 
 在我们编码重现Jeff的动画前，先看一眼我们创建的最终的动画效果。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map2.gif)
-
 
 ----------
 我们通过一些简单的`UIImageView`和`UIButton`来重新开发这个动画，因为它们可以准确地得到动画的感觉，但在真实的地图中这会是一个真实的可伸缩的地图视图。
@@ -1295,10 +1185,8 @@ self.appBackground.image = [UIImage imageNamed:@"app-bg"];
 
 如果我构建并运行，这就是app目前看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map1.png)
-
 
 ----------
 非常棒！现在让我们添加地图，它会是透明的，并且会伴随着变化开始。我们会在主应用图片后立即添加它，因为我们想要最后添加图标按钮，这样它就会使z轴上最高的，也就是在其他视图的顶部。
@@ -1332,10 +1220,8 @@ self.window!.addSubview(self.mapView!)
 
 这里是它现在看起来的样子，我注视了alpha那一行，这样我们就可以看到地图在哪。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map2.png)
-
 
 ----------
 这看起来是动画开始的准确位置了。
@@ -1360,10 +1246,8 @@ UIButton *icon = [UIButton buttonWithType:UIButtonTypeCustom];
 
 让我们看看现在app的样子，地图的alpha值被设为了0，所以它是不可见的。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map3.png)
-
 
 ----------
 好，现在我们将动画的所有主要部件都添加到界面上了，是时候在地图图标被点击时添加一些动画了。
@@ -1495,10 +1379,8 @@ self.mapView.transform = CGAffineTransformTranslate(self.mapView.transform, 0, 0
 
 锁着这是一块正统的代码，好在其非常简单，而且现在你应该习惯了JNWSpringAnimation代码块的样子。这是目前动画看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map3.gif)
-
 
 ----------
 
@@ -1577,10 +1459,8 @@ if (self.mapShowing) {
 
 这里是完整的、最终的动画的样子。如果你想一个疯子一样点击，会发现它确实是从当前值开始动画的，而且不会抽动。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/map4.gif)
-
 
 ----------
 这很有意思！现在让我们去转眼有些断断续续的动画。
@@ -1588,10 +1468,8 @@ if (self.mapShowing) {
 ### 构建Jakub Antalik的音乐播放器
 Jakub是斯洛伐克的一名出色的设计师，已经设计了一些经常发布到Dtibbble去的非常有创造力的界面。其中一个作品非常打动我，那是一个很有趣的例子，证明了界面上每次操作一个元素的断断续续的动画是如何抓住用户的眼球的。在本指南的早期我展示了一个他设计的音乐播放器，含有一些很酷的内置动画，这里我们再看一下。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/music.gif)
-
 
 ----------
 所以这里他明显使用到的技术是什么？他操纵了动画的开始时间。通过让每个元素比另一个元素慢一点动画到屏幕上的位置，并按照行的顺序操作屏幕上的每一个元素，就形成了一个非常整齐的波浪效果，感觉就像每个元素都被前一个元素用橡皮筋带动的一样。
@@ -1602,10 +1480,8 @@ Jakub是斯洛伐克的一名出色的设计师，已经设计了一些经常发
 
 这里是我重建的第二个屏幕的歌曲列表。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicplayer.png)
-
 
 ----------
 
@@ -1640,10 +1516,8 @@ arrowView.image = [UIImage imageNamed:@"arrow"];
 
 这里是目前界面看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/music1.png)
-
 
 ----------
 现在让我们添加更多的视图！
@@ -1668,10 +1542,8 @@ UIButton *addButton = [UIButton buttonWithType:UIButtonTypeCustom];
 
 这里是目前状态的界面，以及点击按钮时不同状态的演示。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton.gif)
-
 
 ----------
 我们`UIControlStateHighlighted`状态的图片只是将白色边框换成了白色的填充。
@@ -1714,10 +1586,8 @@ fifthRow.image = [UIImage imageNamed:@"5th-row"];
 
 这里是在添加动画前的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/music2.png)
-
 
 ----------
 但等一下，我们并不想要在第一次进入的看到这样的界面。这次练习的目的在于让每个元素都动画到它们的位置上，也就是说它们不应该立即出现在它们的最终位置。我要做的是从屏幕的右边开始每一个元素，然后我会让每个元素的左边动画到屏幕的左边，来到最终的位置。
@@ -1794,28 +1664,22 @@ fifthRow.image = [UIImage imageNamed:@"5th-row"];
 
 让我们看看这个duration和damping值产生的动作。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton2.gif)
-
 
 ----------
 恩，有点不太对。动画太快也太跳跃了。这种类型的弹性动画带来了一些焦虑。这是一个关于仅仅使用一个弹簧动画并不能提升你的app整体用户体验的很好的例子。每种类型的动画都给你的用户带来了一些感受，而这个带来了错误地感受。
 
 让我们将持续时间提升到2.1秒并看看感觉。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton3.gif)
-
 
 ----------
 比起Jakub的原始动画，这个又太弹了，我们的damping值也需要调整。让我们将damping从0.3提升到0.6，如我之前所说，它更靠近1这个不弹的值。我们还是需要一点弹性，现在让我们来看看它怎么样了。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton3.gif)
-
 
 ----------
 好了，不是太坏。你可以发现当你使用iOS 7提供的弹簧动画方法时，它直接提供了一些值来获取你想要的感觉。NSWSpringAnimation给出的弹簧属性更容易理解，至少对我来说是这样，因为它们都操作了弹簧动作方程的不同属性。iOS 7的基于block的动画中的damping值实际上是一个解释值，这意味着苹果无论获取到你输入的什么值，都会做一些复杂的计算来操作这个值并将其放入弹簧动作方程式中。你可以说苹果操作了这个值，因为它在0和1之间改变弹性。而在实际的弹簧动作方程中，动作的时间（它到达平衡点或者最终位置的时间）是由弹簧的其他属性决定的，它不是你去设置然后强制弹簧遵循的。苹果的动画方法有一个你需要设置的持续时间，所以你在以一种并非完全遵循物理法则管理下的弹簧动作。这就是为什么我倾向于用JSWSpringAniamtion（或者Facebook Pop，我会马上提及），因为它们有着更加自然、逼真的弹簧动画。
@@ -1846,10 +1710,8 @@ CGFloat stutter = 0.3f;
 
 这里是现在看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton5.gif)
-
 
 ----------
 
@@ -1889,34 +1751,26 @@ CGFloat stutter = 0.3f;
 
 现在我们动画了所有的元素到位置上了，让我们看看效果。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton7.gif)
-
 
 ----------
 对我来说感觉还不太对。动画的延时还是有点太长了，破坏了想要的波浪感。看起来一点也没有流动感。让我们降低延时，把stutter变量的值从0.3降为0.15来看看效果。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton8.gif)
-
 
 ----------
 很接近了，但我认为我们可以再缩小一点点延迟时间来让它更有天然的流动感，就像每个元素都牵引了下一个。让我们将stutter变量降为0.6。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/musicbutton9.gif)
-
 
 ----------
 现在我们有些成果了。我认为它看起来很棒并且有非常好的波浪动作。让我们和Jakub原始的动作做一些比较。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/music.gif)
-
 
 ----------
 看起来我们匹配得很接近！所以从这个例子中学到了什么呢？
@@ -1929,10 +1783,8 @@ CGFloat stutter = 0.3f;
 ### 动画Interesting的Stories Into Position
 当我的新闻app Interesting首次打开时，我会发起一个网络请求来拉取最近的文章。当请求返回时，我需要用`UITableView`来放置文章数据，每行一篇文章。一些app选择在数据返回时淡入列表，一些会将行一行行地滑动到位置上，而其他的则立即显示行，没有任何动画。我选择使用一个内置的类似我们刚刚构建的音乐播放器的效果，但不是水平地动画它们，我从底部垂直地动画它们。这就是我的加载动画的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%205/int.gif)
-
 
 ----------
 要完成它，先来一步步地分解我做了什么。
@@ -1980,7 +1832,6 @@ for (NSUInteger b = 0; b < [cells count]; b++) {
 ```
 
 如果你注意第二个循环，在动画的block中，我的延迟值设为了diff*b。因为我在一个循环中，我可以同步地使用循环次数变量b来保持动画的时间，只需要操作每行的动画时间间隔即可。这可以确保每一行的动画之间都是同样的时间，来达到一个好的波浪形动作。这就是全部了！
-
 
 ----------
 是时候换挡了。
@@ -2039,10 +1890,8 @@ scale.springSpeed = 1.0f; // Between 0-20
 
 这就是这个代码产生的动画。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/pop2.gif)
-
 
 ----------
 很有弹性！我们已经谈论了很多关于如何用JNWSpringAnimation和Core Animation创建弹簧动画的内容，现在来看看Pop的方法。
@@ -2095,10 +1944,8 @@ scale.dynamicsTension = 300;
 
 让我们看看弹性值的调整会如何影响动画。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/pop3.gif)
-
 
 ----------
 这三个球的速度都是10,。红球的弹性是5，篮球是12，绿球是20。
@@ -2113,10 +1960,8 @@ scale.dynamicsTension = 300;
 
 现在让我们来一次性添加一些不同的动画，每个都动画不同的属性。在我们展示代码之前，这里是它看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/pop4.gif)
-
 
 ----------
 这个动画做了四件事情：视图的尺寸拉大，移动到了右边，旋转，并且还改变了背景色。这是我们添加的四个分开的动画，并且有四个分开的动画对象，每个表示一个不同的动画。
@@ -2160,10 +2005,8 @@ color.springSpeed = 5.0f;
 ### 构建立即响应的按钮
 你玩过Loren Brichter的游戏Letterpress吗？我很喜欢的Loren构建的一个关于界面的东西可能不是每个人都明显喜欢的：我喜欢每个按钮在用户按下时立即切换到一个不同的状态的样子。绝对不会延迟。这不是一个简单实现的行为，因为即使你可以将一个图片设为`UIButton`的`UIControlStateHighlighted`状态图，它也只会在点击发生后一小会启动，而且它不允许更进一步的代码来运行它。如果我想要在用户点击一个`UIButton`后立即运行一个动画，我就不得不自己写一个简单的自定义按钮类。但首先，先来看一看我们要构建的是什么。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/popgear.gif)
-
 
 ----------
 如果我想要在用户点击后立即运行代码，我就不得不自己写一个好的`UIButton`子类，这样我就可以重写一些方法，即 -touchesBegan:withEvent: 和 -touchesEnded:withEvent:。iOS中的每个界面的控制都从`UIResponder`继承了这些方法，它是一个处理所有触摸控制事件的父类。有了子类，我就可以塞一些自己的代码来在这些方法启动的时候运行。来看看`DTCTestButton`的实现文件，这是我们的按钮子类，会为我们处理一些魔法。
@@ -2229,10 +2072,8 @@ if (scale) {
 
 如果你看看触摸事件开始时0.8的toValue以及触摸结束时的1.0的toValue，你就可以猜到整个动画会在用户点击按钮时稍微收缩按钮的尺寸，然后会在他们停止触摸时弹回完整的尺寸。完全正确！这里是它现在的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/popgear2.gif)
-
 
 ----------
 
@@ -2312,10 +2153,8 @@ if (scale) {
 
 再一次，这里是我们构建的最终动画。它是一个很有趣的效果，会在用户点击按钮时立即启动，它会让你的界面感觉响应很快。这里的弹性效果很显著，所以当添加动画到你的真实app界面时，去使用一会app的动画，并确保它们的速度和动作时合适且不分散注意力的。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/popgear.gif)
-
 
 ----------
 现在让我们来用Pop做一些有趣的东西！
@@ -2329,10 +2168,8 @@ if (scale) {
 
 稍微看一下我们要构建的是什么。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamburger.gif)
-
 
 ----------
 开始时，我们有一个圆形的黑色按钮，里面中间有一个汉堡形的线。当按钮被点击时，它动画到一个稍微小一点的尺寸。但点击结束时，线会动画城红色的X。当点击X状态时，动画会回到原始的颜色和位置。这是一个明显简化的关于发生了什么的解释，让我们来看看代码。
@@ -2352,10 +2189,8 @@ self.hamburgerButton.layer.cornerRadius = 75;
 
 这里是我们目前有的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamburgerblack.png)
-
 
 ----------
 该把我们的汉堡线作为子视图添加到按钮上了。
@@ -2392,18 +2227,14 @@ self.bottom.layer.cornerRadius = sectionHeight/2;
 
 我设置了一些我们会在这个代码中重复用到的`CGFloat`的数字变量。我添加了三个`UIView`对象到主汉堡按钮上，每个都是白色背景的圆角矩形。它们都放置在大汉堡按钮的水平中心，并在垂直方向上分离。这段代码中最有趣的地方在于我设置这些每个视图的UserInteractionEnabled属性为NO。如果我们不对这些视图这样做，如果直接点击按钮，会吞没触摸事件并且不会传递到实际的完整汉堡按钮上。这里是现在看起来的样子。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamburgerlines.png)
-
 
 ----------
 现在不添加任何代码，因为这个按钮是我们在之前的例子中创建的`UIButton`子类`DTCTestButton`类型的，已经有了一些动画了。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamburger2.gif)
-
 
 ----------
 
@@ -2477,10 +2308,8 @@ if (bottomColor) {
 
 这时候当用户点击按钮时我们还没有X，但已经有了这个可爱的视觉了。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamred.png)
-
 
 ----------
 
@@ -2523,10 +2352,8 @@ Pop的旋转动画时在layer上操作的（看到kPOPLayerRotation了没），�
 
 我们向上旋转一根线、向下旋转一根线所以它们应该在中间交叉，对吗？让我们看看我们得到了什么。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamweird.png)
-
 
 ----------
 额，直观地说，这可能并不是你期待的样子。旋转动画让线条变成这样的原因是没跟线条都是围绕着它们layer的中心旋转的。所以这些视图会像跷跷板一样旋转，而不是我们想要的在中间交叉的样子。我们可以改变layer旋转的锚点，但这有点麻烦，因为这样做会重定位layer并且我们需要调整框架，这纯粹是找麻烦。所以，更简单的做法是，我们可以就将顶部线下移一点，然后将底部的线上移一旦，然后重叠它们。
@@ -2565,18 +2392,14 @@ if (bottomPosition) {
 
 经过一些测试和试错，我决定将顶部的线下移29像素，底部的线上移29像素，这样会让它们重合的最好。你也可以做一些三角几何计算来得出这个值。我们使用kPOPLayerTranslationY动画来让两根线旋转到按钮中间的X。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamcrossed.png)
-
 
 ----------
 完成了！很好吧？现在，当你点击按钮，它会将三根线变成两根线，但当用户再次点击时会发生什么呢？这时候，不会发生任何事情，因为我们没有实现任何其他条件分支的逻辑来将X变回三根线。幸运的是，我们可以很简单地复制粘贴动画，但是要将toValue值改为初始值。比如说，我们需要将两根线都旋转回0度，记得要移动29像素，并将它们的颜色改回白色。还有要将中间的线淡入回100%不透明。这样就全部完成了，我们得到了一个漂亮的汉堡按钮。
 
-
 ----------
 ![](https://github.com/Cloudox/Motion-Design-for-iOS/blob/master/SECTION%206/hamburger.gif)
-
 
 ----------
 
@@ -2596,7 +2419,6 @@ if (bottomPosition) {
 
 祝好运！
 -Mike
-
 
 ----------
 终于又翻译完毕了一本书，看了一下第一篇文章的时间，竟然已经四个月了，期间断断续续，有长有短，到了最后竟有点不舍。这本书没有纸质的，是纯网页版，想来也是，毕竟内容中有很多动图，也许这样才更适合用来做动画教学吧。整本书一开始就介绍了很多炫酷的动画效果，之前自己只是学习了简单的UIView动画，对于动画也有了一点自己的心得，其实如作者的好习惯，每次观察一个动画时都先去进行拆解，看看都做了些什么，然后再一个一个去实现，这样想来，大部分动画都有了实现的勇气了，也不是看上去那么难的。我很喜欢做界面动画，喜欢好看的界面，平常也会去感受一些设计独到的app，发现好的动画，自己也会思考一下怎么实现的，这非常有意思，我想，这才是我选择做移动端开发的潜在目的吧，喜欢好看的界面，也希望自己以后能做出更多有意思的app~
